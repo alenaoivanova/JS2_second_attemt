@@ -30,6 +30,25 @@
 // }
 
 
-const isAdmin = false;
-isAdmin ? "Администратор" : "Пользователь";
-console.log (`Добро пожаловать: ${isAdmin ? "Администратор" : "Пользователь"}`);
+// const isAdmin = false;
+
+// console.log (`Добро пожаловать: ${isAdmin ? "Администратор" : "Пользователь"}`);
+
+const typeUser = "user"; // user, guest
+
+switch (typeUser) {
+    case "admin":
+        console.log("Вы администратор");
+        break;
+    case "user":
+        console.log("Вы пользователь");
+        break;
+    
+    case "guest":
+        console.log("Вы гость");
+        break;
+
+    default:
+        console.log("Неизвестный тип пользователя");
+         break;
+}
