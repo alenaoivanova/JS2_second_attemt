@@ -1,15 +1,29 @@
-const age = 1;
+let age = "";
 const gender = ("Муж");
 
-if (age > 18) {
-    console.log ("Вам больше 18");
+age = +age;
+
+if (!isNaN(age)) {
+    if (age > 18) {
+        console.log("Вам больше 18");
+    } else if (age < 18) {
+        console.log("Вам меньше 18");
+    } else if (age === 18) {
+            console.log("Happy B-day!");
+    } else {
+        console.log("Укажите ваш возраст");
+    }
 } else {
-    console.log("Вам меньше 18 лет");
+    console.log("Введите корректные данные"); 
+
+}
+
+
 
 if (gender.toLocaleLowerCase() === "муж") {
     console.log ("Вам налево");
 } 
-}
+
 
 if (gender === "female") {
     console.log ("Вам направо");
