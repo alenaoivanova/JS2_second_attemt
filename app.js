@@ -1,30 +1,35 @@
-let age = "1";
-const gender = ("Муж");
+// let age = "1";
+// const gender = ("Муж");
 
-age = +age;
+// age = +age;
 
-if (!isNaN(age)) {
-    if (age > 18) {
-        console.log("Вам больше 18");
-    } else if (age < 18) {
-        console.log("Вам меньше 18");
-    } else if (age === 18) {
-            console.log("Happy B-day!");
-    } else {
-        console.log("Укажите ваш возраст");
-    }
-} else {
-    console.log("Введите корректные данные"); 
+// if (!isNaN(age)) {
+//     if (age > 18) {
+//         console.log("Вам больше 18");
+//     } else if (age < 18) {
+//         console.log("Вам меньше 18");
+//     } else if (age === 18) {
+//             console.log("Happy B-day!");
+//     } else {
+//         console.log("Укажите ваш возраст");
+//     }
+// } else {
+//     console.log("Введите корректные данные"); 
 
-}
-
-
-
-if (gender.toLocaleLowerCase() === "муж") {
-    console.log ("Вам налево");
-} 
+// }
 
 
-if (gender === "female") {
-    console.log ("Вам направо");
-}
+
+// if (gender.toLocaleLowerCase() === "муж") {
+//     console.log ("Вам налево");
+// } 
+
+
+// if (gender === "female") {
+//     console.log ("Вам направо");
+// }
+
+
+const isAdmin = false;
+isAdmin ? "Администратор" : "Пользователь";
+console.log (`Добро пожаловать: ${isAdmin ? "Администратор" : "Пользователь"}`);
