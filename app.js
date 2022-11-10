@@ -1,4 +1,4 @@
-let age = "";
+let age = "1";
 const gender = ("Муж");
 
 age = +age;
