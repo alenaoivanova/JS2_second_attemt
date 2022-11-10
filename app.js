@@ -1,3 +1,20 @@
+let i = 0;
+const lastNumber = 10;
+let message = '';
+
+while (++i <= lastNumber) {
+    message += `${i}${i !== lastNumber ? "," : ""}`;
+}
+console.log(message);
+
+
+// switch (typeUser) {
+//     case "admin"
+// }
+
+
+
+
 // let age = "1";
 // const gender = ("Муж");
 
@@ -34,21 +51,21 @@
 
 // console.log (`Добро пожаловать: ${isAdmin ? "Администратор" : "Пользователь"}`);
 
-const typeUser = "user"; // user, guest
+// const typeUser = "user"; // user, guest
 
-switch (typeUser) {
-    case "admin":
-        console.log("Вы администратор");
-        break;
-    case "user":
-        console.log("Вы пользователь");
-        break;
+// switch (typeUser) {
+//     case "admin":
+//         console.log("Вы администратор");
+//         break;
+//     case "user":
+//         console.log("Вы пользователь");
+//         break;
     
-    case "guest":
-        console.log("Вы гость");
-        break;
+//     case "guest":
+//         console.log("Вы гость");
+//         break;
 
-    default:
-        console.log("Неизвестный тип пользователя");
-         break;
-}
+//     default:
+//         console.log("Неизвестный тип пользователя");
+//          break;
+// }
